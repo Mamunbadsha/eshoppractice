@@ -39,7 +39,14 @@ const TopRightBar = () => {
 
   return (
     <div className="flex justify-end items-center gap-[49px]">
-      <div>usd</div>
+      <div>
+        <select name="currency">
+          <option value="USD">USD</option>
+          <option value="BDT">BDT</option>
+          <option value="DRT">FDT</option>
+          <option value="SSD">KDT</option>
+        </select>
+      </div>
       <div
         className=" relative after:content-[''] after:absolute after:w-[1px]  
             after:h-[32px] after:bg-[#BFBFBF] after:left-[-25px] after:top-[50%]
