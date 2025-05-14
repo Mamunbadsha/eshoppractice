@@ -1,9 +1,31 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({text,bg="#FF624c",fontName="Montserrat",fontWeight="bold",size="xl",color="white",paddingY="4",paddingx="10", redious="10"}) => {
+const Button = ({
+  text,
+  bg = "#FF624c",
+  fontName = "Montserrat",
+  fontWeight = "bold",
+  size = "xl",
+  color = "white",
+  paddingY = "16",
+  paddingx = "40",
+  redious = "10",
+}) => {
   return (
-    <button className={`bg-[${bg}] font-${fontName} font-${fontWeight} text-${size} text-${color} py-${paddingY} px-${paddingx} rounded-[${redious}px]`}>{text}</button>
-  )
-}
+    <button
+      style={{
+        backgroundColor: bg,
+        fontFamily: fontName,
+        fontWeight: fontWeight,
+        fontSize: size,
+        color: color,
+        padding:`${paddingY}px ${ paddingx}px`,
+        borderRadius:`${ redious}px`
+      }}
+    >
+      {text}
+    </button>
+  );
+};
 
-export default Button
+export default Button;
