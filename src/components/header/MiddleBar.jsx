@@ -1,9 +1,57 @@
-import React from 'react'
+import React from "react";
+import { IoSearchSharp } from "react-icons/io5";
+import CartIcon from "../../icons/CartIcon";
+import ManIcon from "../../icons/ManIcon";
+import Container from "../Container";
 
 const MiddleBar = () => {
   return (
-    <div>MiddleBar</div>
-  )
-}
+    <Container>
+      <div className="flex justify-between items-center py-[32px]">
+        <div>
+          <img src="images/Logo.png" alt="logo" />
+        </div>
+        <div className="flex  items-center">
+          <div className="relative mr-[40px]">
+            <input
+              type="text"
+              placeholder="Search Products ..."
+              className="w-[332px] border border-gray-400 py-[18px] px-6 rounded-lg mr-[0px] "
+            />
+            <IoSearchSharp className="text-3xl absolute top-1/2 -translate-y-1/2 right-[20px]" />
+          </div>
+          <div className="relative pl-[50px] mr-[90px]">
+            <div className="absolute top-[5px] left-0 ">
+              <CartIcon color="green" />
+            </div>
+            <p className="font-['Monstrerrat'] font-normal text-base leading-6">
+              cart
+            </p>
+            <span className="font-['Monstrerrat'] font-bold text-sm leading-5">
+              $15000
+            </span>
+          </div>
+          <div>
+            <div
+              className="relative pl-[50px] 
+           after:content-[''] after:absolute after:w-[1px] 
+          after:h-[32px] after:bg-[#BFBFBF]  after:left-[-45px]   after:top-[50%] after:-translate-y-1/2 "
+            >
+              <div className="absolute top-[5px] left-0 ">
+                <ManIcon />
+              </div>
+              <p className="font-['Monstrerrat'] font-normal text-base leading-5">
+                User
+              </p>
+              <span className="font-['Monstrerrat'] font-bold text-sm leading-5">
+                Account
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
+};
 
-export default MiddleBar
+export default MiddleBar;

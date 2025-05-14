@@ -57,7 +57,7 @@ const TopRightBar = () => {
         {" "}
         <select
           name="country"
-          className="w-[150px] hidden"
+          className="w-[150px] hidden "
           value={selectedCountry?.value || ""}
           onChange={(e) => {
             const country = countries.find((c) => c.value === e.target.value);
@@ -65,7 +65,9 @@ const TopRightBar = () => {
           }}
         >
           {countries.map((country, index) => (
-            <option value={country.value}>{country.name}</option>
+            <option key={index} value={country.value}>
+              {country.name}
+            </option>
           ))}
         </select>
         {/* custom dropdown */}
