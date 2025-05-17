@@ -17,11 +17,11 @@ const TopLeftBar = () => {
               target="-blank"
               className="flex items-center gp-2"
             >
-              <MdLocationOn />
-              123 Main Street, Anytown USA
+              <MdLocationOn/>
+             <span className='ml-[10px]'> 123 Main Street, Anytown USA</span>
             </a>
             <a href="tel:0246565545" className="flex items-center gp-2">
-              <FaPhone />
+              <FaPhone  className='mr-[10px]'/>
               +1 (555) 123-4567
             </a>
           </div>
