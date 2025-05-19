@@ -35,7 +35,8 @@ const FeatureProduct = () => {
     slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // autopla
+    autoplay: true,
+    autoplaySpeed: 1000,
   };
   return (
     <Container>
