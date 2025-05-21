@@ -3,6 +3,7 @@ import Container from "../Container";
 import { MdLocationOn } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
+import Select from "react-select/base";
 
 const FooterBottom = () => {
   return (
@@ -101,6 +102,61 @@ const FooterBottom = () => {
           </p>
           <p>Sitemap</p>
         </div>
+      </div>
+
+      
+      <div>
+        {function App() {
+          const countriesWithFlag = [
+            {
+              name: "USA",
+              flag: "https://flagcdn.com/us.svg",
+              value: "us",
+              language: "en",
+            },
+            {
+              name: "USA",
+              flag: "https://flagcdn.com/bd.svg",
+              value: "bd",
+              language: "bd",
+            },
+          ];
+
+          const options = countriesWithFlag.map((country) => ({
+            value: country.value,
+            language: country.value,
+            label: (
+              <div className="flex items-center">
+                <img
+                  src={country.flag}
+                  alt={`${country.name} flag`}
+                  className="w-4 h-4 mr-2"
+                />
+                <span>{country.name}</span>
+              </div>
+            ),
+          }));
+
+         return(
+          <>
+          
+         <Select 
+         
+         options={options}
+         onChange={(selected)=> console.log('Selected:', selected.value)}
+         className="w-[200px]"
+         classNamesPrefix="select" 
+         />
+          
+        <div>
+          <h1>this is my countru language</h1>
+        </div>
+
+
+          </>
+         )
+
+        }}
       </div>
     </Container>
   );

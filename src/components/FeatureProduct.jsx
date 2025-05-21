@@ -4,6 +4,10 @@ import Container from "./Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { FaAngleLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa6";
+import { HiArrowLongRight } from "react-icons/hi2";
+import { CgArrowLongRight } from "react-icons/cg";
 
 const FeatureProduct = () => {
   function SampleNextArrow(props) {
@@ -11,20 +15,49 @@ const FeatureProduct = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "gray" }}
+        style={{
+          ...style,
+          display: "block",
+          background: "transparent",
+          fontSize: "20px",
+          width: "40px",
+          height: "40px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "gray",
+          border: "3px solid #3030604c",
+        }}
         onClick={onClick}
-      />
+      >
+        <FaAngleRight />
+      </div>
     );
   }
-
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "blue" }}
+        style={{
+          ...style,
+          display: "block",
+          background: "transparent",
+          fontSize: "20px",
+          width: "40px",
+          height: "40px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "gray",
+          border: "3px solid #3030604c",
+        }}
         onClick={onClick}
-      />
+      >
+        <FaAngleLeft />
+      </div>
     );
   }
   var settings = {
@@ -39,7 +72,27 @@ const FeatureProduct = () => {
     autoplaySpeed: 1000,
   };
   return (
-    <Container>
+  <div className="mt-[80px]">
+      <Container>
+      <div className="flex justify-between mb-[48px]">
+        <div>
+          <h2 className="font-['Poppins'] font-semibold text-[36px]">
+            Featured Products
+          </h2>
+        </div>
+        <div className="flex justify-center items-center gap-[16px]">
+          <div>
+            <p className="font-['Montserrat'] font-bold text-[16px] text-[#FF624C]">
+              View All
+            </p>
+          </div>
+          <div>
+            <span >
+              <CgArrowLongRight className="text-[#FF624C]"/>
+            </span>
+          </div>
+        </div>
+      </div>
       <Slider {...settings}>
         <ProductLayout
           percentTag={true}
@@ -98,6 +151,8 @@ const FeatureProduct = () => {
         />
       </Slider>
     </Container>
+  </div>
+
   );
 };
 
