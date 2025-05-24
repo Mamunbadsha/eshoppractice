@@ -103,8 +103,6 @@ const FooterBottom = () => {
           <p>Sitemap</p>
         </div>
       </div>
-
-      
       <div>
         {function App() {
           const countriesWithFlag = [
@@ -139,23 +137,17 @@ const FooterBottom = () => {
 
          return(
           <>
-          
          <Select 
-         
          options={options}
          onChange={(selected)=> console.log('Selected:', selected.value)}
          className="w-[200px]"
          classNamesPrefix="select" 
-         />
-          
+         /> 
         <div>
           <h1>this is my countru language</h1>
         </div>
-
-
           </>
          )
-
         }}
       </div>
     </Container>

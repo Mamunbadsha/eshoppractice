@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import Facility from "../components/Facility";
 import FeatureProduct from "../components/FeatureProduct";
 import OfferSection from "../components/OfferSection";
+import NewProduct from "../components/NewProduct";
+import BestSeller from "../components/BestSeller";
 
 const HomePage = () => {
   return (
@@ -11,6 +13,8 @@ const HomePage = () => {
       <Facility />
       <FeatureProduct />
       <OfferSection />
+      <NewProduct />
+      <BestSeller />
     </div>
   );
 };

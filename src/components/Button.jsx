@@ -7,9 +7,10 @@ const Button = ({
   fontWeight = "bold",
   size = "xl",
   color = "white",
-  paddingY = "16",
-  paddingx = "40",
+  paddingY = "20px",
+  paddingX = "20px",
   redious = "10",
+  border = "none",
 }) => {
   return (
     <button
@@ -19,8 +20,13 @@ const Button = ({
         fontWeight: fontWeight,
         fontSize: size,
         color: color,
-        padding:`${paddingY}px ${ paddingx}px`,
-        borderRadius:`${ redious}px`
+        paddingTop: paddingY,
+        paddingBottom: paddingY,
+        paddingLeft: paddingX,
+        paddingRight: paddingX,
+        borderRadius: `${redious}px`,
+        border: border,
+        cursor: "pointer",
       }}
     >
       {text}
