@@ -30,7 +30,7 @@ const ProductLayout = ({
             50%
           </div>
         ) : (
-          <div className="bg-[#482b8d]  h-[70px] w-[70px] rounded-full py-[7px] px-[24px] absolute top-[-8px] right-[-9px]  font-bold text-white">
+          <div className="bg-[#FF624C]  h-[70px] w-[70px] rounded-full py-[7px] px-[24px] absolute top-[-8px] right-[-9px]  font-bold text-white">
             <span className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
               50%
             </span>

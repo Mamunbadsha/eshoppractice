@@ -20,9 +20,11 @@ const BottomBar = () => {
   });
   useEffect(() => {
     const handleClickOutside = (e) => {
-    
-      if (dropdownOneRef.current && !dropdownOneRef.current.contains(e.target)) {
-        setIsDropdownOpenOne(false)
+      if (
+        dropdownOneRef.current &&
+        !dropdownOneRef.current.contains(e.target)
+      ) {
+        setIsDropdownOpenOne(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -49,7 +51,7 @@ const BottomBar = () => {
                   <FaBars />
                   All Categories
                 </button>
-                  {isDropdownOpenOne && (
+                {isDropdownOpenOne && (
                   <div className="absolute z-10 mt-2 w-30 bg-amber-400 rounded shadow-lg ">
                     <ul className="py-2 font-['Monserrat'] font-normal text-base leading-10 text-black ">
                       <li className="px-2 hover:bg-green-400 duration-300 cursor-pointer ">

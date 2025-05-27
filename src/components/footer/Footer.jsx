@@ -8,7 +8,7 @@ const Footer = () => {
     <div>
       <FooterTop />
       <FooterBottom />
-      <Language/>
+      {/* <Language/> */}
     </div>
   );
 };

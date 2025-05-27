@@ -5,6 +5,10 @@ import FeatureProduct from "../components/FeatureProduct";
 import OfferSection from "../components/OfferSection";
 import NewProduct from "../components/NewProduct";
 import BestSeller from "../components/BestSeller";
+import Faq from "../components/faq/Faq";
+import SpringSale from "../components/SpringSale";
+import TechTalk from "../components/TechTalk";
+import BrandName from "../components/BrandName";
 
 const HomePage = () => {
   return (
@@ -15,6 +19,10 @@ const HomePage = () => {
       <OfferSection />
       <NewProduct />
       <BestSeller />
+      <Faq />
+      <SpringSale />
+      <TechTalk />
+      <BrandName />
     </div>
   );
 };
