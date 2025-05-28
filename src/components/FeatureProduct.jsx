@@ -64,11 +64,11 @@ const FeatureProduct = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1000,
   };
   return (
@@ -95,7 +95,7 @@ const FeatureProduct = () => {
         </div>
         <Slider {...settings}>
           <ProductLayout
-            percentTag={true}
+            // percentTag={true}
             category="LAPTOP"
             title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             rating="5"
@@ -105,37 +105,38 @@ const FeatureProduct = () => {
             stockAmount="50"
           />
           <ProductLayout
-            percentTag={false}
-            category="LAPTOP"
+            percentTag={true}
+            category="A U D I O"
             title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             rating="3"
             totalrating="100"
-            price="2,199.00"
-            stock={true}
+            price="59.00"
+            correctprice="$118.00"
+            stock={false}
             stockAmount="50"
           />
           <ProductLayout
-            percentTag={true}
-            category="LAPTOP"
+            // percentTag={true}
+            category="P H O N E"
             title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             rating="2"
             totalrating="100"
             price="2,199.00"
-            stock={true}
+            stock={false}
             stockAmount="50"
           />
           <ProductLayout
-            percentTag={true}
-            category="LAPTOP"
+            // percentTag={true}
+            category="T E L E V I S I O N"
             title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             rating="4"
             totalrating="100"
             price="2,199.00"
-            stock={true}
+            stock={false}
             stockAmount="50"
           />
           <ProductLayout
-            percentTag={false}
+            // percentTag={false}
             category="LAPTOP"
             title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             rating="1"

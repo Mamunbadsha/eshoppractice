@@ -4,6 +4,7 @@ import Container from "./Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "./Button";
+import { FaAngleDown } from "react-icons/fa";
 
 const NewProduct = () => {
   return (
@@ -17,18 +18,24 @@ const NewProduct = () => {
           </div>
           <div className="flex justify-center items-center gap-[16px]">
             <div>
-              <p className="font-['Montserrat'] font-bold text-[16px] text-[#FF624C]">
+              <p className="font-['Montserrat'] font-[400] text-[16px] mr-[10px] text-[#303030]">
                 Sort by
               </p>
             </div>
-            <div>
-              <select name="currency" className="text-[#FF624C] ">
+            <div className="relative">
+              <select
+                name="currency"
+                className="text-[#FF624C]  appearance-none mr-[80px] font-['Montserrat']  font-bold text-[16px]"
+              >
                 <option value="USD">All Categories</option>
                 <option value="USD">USD</option>
                 <option value="BDT">BDT</option>
                 <option value="DRT">FDT</option>
                 <option value="SSD">KDT</option>
               </select>
+              <div className="pointer-events-none absolute right-0 top-[14px] -translate-y-1/2 text-[#FF624C]">
+                <FaAngleDown />
+              </div>
             </div>
           </div>
         </div>
@@ -40,6 +47,7 @@ const NewProduct = () => {
             rating="5"
             totalrating="100"
             price="2,199.00"
+            correctprice="$118.00"
             stock={false}
             stockAmount="50"
           />
@@ -50,7 +58,7 @@ const NewProduct = () => {
             rating="3"
             totalrating="100"
             price="2,199.00"
-            stock={true}
+            stock={false}
             stockAmount="50"
           />
           <ProductLayout
@@ -60,7 +68,8 @@ const NewProduct = () => {
             rating="2"
             totalrating="100"
             price="2,199.00"
-            stock={true}
+            correctprice="$118.00"
+            stock={false}
             stockAmount="50"
           />
           <ProductLayout
@@ -70,7 +79,8 @@ const NewProduct = () => {
             rating="4"
             totalrating="100"
             price="2,199.00"
-            stock={true}
+            correctprice="$118.00"
+            stock={false}
             stockAmount="50"
           />
           <ProductLayout
@@ -90,6 +100,10 @@ const NewProduct = () => {
             bg="transparent"
             border="1px solid #FF624C"
             color="#FF624C"
+            paddingX="40px"
+            paddingY="16px"
+            
+
           />
         </div>
       </Container>

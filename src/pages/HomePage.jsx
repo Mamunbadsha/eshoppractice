@@ -18,9 +18,9 @@ const HomePage = () => {
       <FeatureProduct />
       <OfferSection />
       <NewProduct />
+      <SpringSale />
       <BestSeller />
       <Faq />
-      <SpringSale />
       <TechTalk />
       <BrandName />
     </div>

@@ -74,20 +74,62 @@ const SpringSale = () => {
     <div className="mt-[80px]" style={{ background: "url('images/bg.png')" }}>
       <Container>
         <div className="flex justify-between">
-          <div className="  justify-center mt-[200px]">
+          <div className="  justify-center mt-[100px]">
             <h1 className="text-[56px] font-['Poppins'] font-[700]">
               Spring Sale
             </h1>
-            <div className=" text-[40px] font-[700] text-[#FF624C] justify-center">
-              <span>{timerLeft.days}</span>: <span>{timerLeft.hours}</span>:{" "}
-              <span>{timerLeft.minutes}</span>: <span>{timerLeft.seconds}</span>
+            <div className="flex w-[402px] justify-between">
+              <div>
+                <span className=" text-[50px] font-[700] text-[#e53b2c] justify-center flex">
+                  {timerLeft.days <= 9 ? `0${timerLeft.days}` : timerLeft.days}
+                  :
+                </span>
+                <span className="text-[#303030] font-['Montserrat'] font-normal text-base leading-4 block">
+                  Days
+                </span>
+              </div>
+              <div>
+                <span className=" text-[50px] font-[700] text-[#e53b2c] justify-center flex ">
+                  {timerLeft.hours <= 9
+                    ? `0${timerLeft.hours}`
+                    : timerLeft.hours}
+                  :
+                </span>
+                <span className="text-[#303030] font-['Montserrat'] font-normal text-base leading-4 block">
+                  hours
+                </span>
+              </div>
+              <div>
+                <span className=" text-[50px] font-[700] text-[#e53b2c] justify-center flex">
+                  {timerLeft.minutes <= 9
+                    ? `0${timerLeft.minutes}`
+                    : timerLeft.minutes}
+                  :
+                </span>
+
+                <span className="text-[#303030] font-['Montserrat'] font-normal text-base leading-4 block">
+                  mitutes
+                </span>
+              </div>
+              <div>
+                <span className=" text-[50px] font-[700] text-[#e53b2c] justify-center ">
+                  {timerLeft.seconds <= 9
+                    ? `0${timerLeft.seconds}`
+                    : timerLeft.seconds}
+                </span>
+                <span className="text-[#303030] font-['Montserrat'] font-normal text-base leading-4 block">
+                  seconds
+                </span>
+              </div>
             </div>
-            <button className="py-[7px] px-[20px] bg-[#FF624C] text-white rounded-[10px] mt-[32px]">
+            <button className="py-[16px] px-[40px] bg-[#FF624C] text-white rounded-[10px] mt-[72px] font-['Montserrat'] font-[700] text-[20px]">
               Shop now
             </button>
+
+            <img className="mt-[90px]" src="images/dots.png" alt="dots" />
           </div>
           <div className=" max-w-[902px]">
-            {" "}
+            
             <Slider {...settings}>
               <ProductLayout
                 percentTag={false}
@@ -98,6 +140,9 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={false}
                 stockAmount="50"
+                bg="#FFFFFF"
+                image={true}
+                spring={true}
               />
               <ProductLayout
                 percentTag={false}
@@ -108,6 +153,9 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={true}
                 stockAmount="50"
+                bg="#FFFFFF"
+                image={true}
+                spring={true}
               />
               <ProductLayout
                 percentTag={false}
@@ -118,6 +166,9 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={true}
                 stockAmount="50"
+                bg="#FFFFFF"
+                image={true}
+                spring={true}
               />
               <ProductLayout
                 percentTag={false}
@@ -128,6 +179,9 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={true}
                 stockAmount="50"
+                bg="#FFFFFF"
+                image={true}
+                spring={true}
               />
               <ProductLayout
                 percentTag={false}
@@ -138,6 +192,9 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={false}
                 stockAmount="50"
+                bg="#FFFFFF"
+                image={true}
+                spring={true}
               />
             </Slider>
           </div>

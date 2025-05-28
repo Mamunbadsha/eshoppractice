@@ -44,7 +44,11 @@ const TopRightBar = () => {
           <option value="USD">USD</option>
           <option value="BDT">BDT</option>
           <option value="DRT">FDT</option>
-          <option value="SSD">KDT</option>
+          <option value="SSD">FDT</option>
+          <option value="SSD">LDT</option>
+          <option value="SSD">GDT</option>
+          <option value="SSD">HDT</option>
+          <option value="SSD">RDT</option>
         </select>
       </div>
       <div
@@ -112,7 +116,7 @@ const TopRightBar = () => {
           </ul>
         )}
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-[24px]">
         <Link to={"#"}>
           <FaFacebookF />
         </Link>
