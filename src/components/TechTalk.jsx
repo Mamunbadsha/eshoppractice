@@ -24,12 +24,14 @@ const TechTalk = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
-          <div className=" py-[52px] px-[52px] rounded-[10px]  hover:border border-[#b9b3b3]  duration-300">
-            <img className="w-[]" src="images/watch.png" alt="watch" />
-            <p className="w-[] text-[24px] leading-[30px] font-semibold font-['Poopins']">
+        {/* <div className="flex items-center justify-center">
+          <div className=" w-[440px] h-[406px] rounded-[10px]   hover:border border-[#b9b3b3]  duration-300">
+           <div  className=" rounded-[10px]"> <img className="w-full" src="images/new.png" alt="new" /></div>
+           <div className=" text-[24px]  font-semibold font-['Poopins']">
+             <p >
               Our Category Choices for Top 10 Tech Gadgets in 2023
             </p>
+           </div>
             <div className="flex justify-between items-center">
               <div>
                 <button className="py-[7px] px-[20px] bg-[#FF624C] text-white rounded-[10px] mt-[32px]">
@@ -74,6 +76,62 @@ const TechTalk = () => {
                   Review
                 </button>
               </div>
+              <div className="flex justify-center items-center mt-[20px]">
+                <div className="mr-2">
+                  <MdOutlineWatchLater />{" "}
+                </div>
+                <div>10 April 2023</div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="flex justify-between ">
+          <div className="w-[440px] hover:border border-[#b9b3b3]  py-[52px] px-[52px] rounded-[10px]   duration-300">
+            <img className="w-full " src="images/new.png" alt="new" />
+            <p className="w-[380px] py-[32px] text-[24px] leading-[30px] font-semibold font-['Poopins']">
+              Our Category Choices for Top 10 Tech Gadgets in 2023
+            </p>
+            <div className="flex justify-between">
+              <button className="py-[7px] px-[20px] bg-[#FF624C] text-white rounded-[10px] mt-[32px]">
+                Review
+              </button>
+              <div className="flex justify-center items-center mt-[20px]">
+                <div className="mr-2">
+                  <MdOutlineWatchLater />{" "}
+                </div>
+                <div>10 April 2023</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[440px] hover:border border-[#b9b3b3]  py-[52px] px-[52px] rounded-[10px] duration-300">
+            <img className="w-full " src="images/new.png" alt="new" />
+            <p className="w-[380px] py-[32px] text-[24px] leading-[30px] font-semibold font-['Poopins']">
+              Our Category Choices for Top 10 Tech Gadgets in 2023
+            </p>
+            <div className="flex justify-between">
+              <button className="py-[7px] px-[20px] bg-[#FF624C] text-white rounded-[10px] mt-[32px]">
+                Review
+              </button>
+              <div className="flex justify-center items-center mt-[20px]">
+                <div className="mr-2">
+                  <MdOutlineWatchLater />{" "}
+                </div>
+                <div>10 April 2023</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[440px] hover:border border-[#b9b3b3]  py-[52px] px-[52px] rounded-[10px]  duration-300">
+            <img className="w-full " src="images/new.png" alt="new" />
+            <p className="w-[380px] py-[32px] text-[24px] leading-[30px] font-semibold font-['Poopins']">
+              Our Category Choices for Top 10 Tech Gadgets in 2023
+            </p>
+            <div className="flex justify-between">
+              <button className="py-[7px] px-[20px] bg-[#FF624C] text-white rounded-[10px] mt-[32px]">
+                Review
+              </button>
               <div className="flex justify-center items-center mt-[20px]">
                 <div className="mr-2">
                   <MdOutlineWatchLater />{" "}

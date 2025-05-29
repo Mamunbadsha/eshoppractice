@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 
-const AccordianItem = ({ title, content, onToggle, isopen }) => {
+const AccordianItem = ({ title, content, onToggle, isopen,  }) => {
   return (
     <div
       onClick={onToggle}
@@ -27,6 +27,7 @@ const AccordianItem = ({ title, content, onToggle, isopen }) => {
           order by logging into your account and viewing your order history.
         </div>
       )}
+     
     </div>
   );
 };

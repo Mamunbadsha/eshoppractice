@@ -30,9 +30,9 @@ const Faq = () => {
       style={{ background: "url('images/bg.png')" }}
     >
       <Container>
-        <div className="flex">
+        <div className="flex items-end">
           <div className="flex justify-between">
-            <div className="w-[902px]">
+            <div className="w-[902px] ">
               {accordianData.map((item, index) => (
                 <AccordianItem
                   key={index}
@@ -40,14 +40,13 @@ const Faq = () => {
                   content={item.content}
                   onToggle={() => {
                     setOpenIndex(openIndex === index ? null : index);
-                    console.log(openIndex, index);
                   }}
                   isopen={openIndex === index}
                 />
               ))}
             </div>
           </div>
-          <div className="mt-[180px] ml-[112px]">
+          <div className=" ml-[112px] mb-7">
             <h2 className="w-[306px] text-[36px] font-['Poppins'] font-semibold">
               Frequently Asked Questions
             </h2>
@@ -55,7 +54,7 @@ const Faq = () => {
               Questions that get asked the most by our clients. Get any burning
               questions?
             </p>
-            <button className="py-[16px] px-[40px] bg-[#FF624C] text-white font-semibold rounded-[10px]">
+            <button className="py-[16px] px-[40px]  bg-[#FF624C] text-white font-semibold rounded-[10px]">
               Ask A Question
             </button>
           </div>

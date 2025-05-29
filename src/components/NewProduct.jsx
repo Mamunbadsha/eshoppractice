@@ -50,6 +50,7 @@ const NewProduct = () => {
             correctprice="$118.00"
             stock={false}
             stockAmount="50"
+            discounted={true}
           />
           <ProductLayout
             percentTag={false}
@@ -71,6 +72,7 @@ const NewProduct = () => {
             correctprice="$118.00"
             stock={false}
             stockAmount="50"
+            discounted={true}
           />
           <ProductLayout
             percentTag={true}
@@ -82,6 +84,7 @@ const NewProduct = () => {
             correctprice="$118.00"
             stock={false}
             stockAmount="50"
+            discounted={true}
           />
           <ProductLayout
             percentTag={false}
@@ -102,8 +105,6 @@ const NewProduct = () => {
             color="#FF624C"
             paddingX="40px"
             paddingY="16px"
-            
-
           />
         </div>
       </Container>

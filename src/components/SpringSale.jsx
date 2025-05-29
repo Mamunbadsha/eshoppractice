@@ -81,8 +81,7 @@ const SpringSale = () => {
             <div className="flex w-[402px] justify-between">
               <div>
                 <span className=" text-[50px] font-[700] text-[#e53b2c] justify-center flex">
-                  {timerLeft.days <= 9 ? `0${timerLeft.days}` : timerLeft.days}
-                  :
+                  {timerLeft.days <= 9 ? `0${timerLeft.days}` : timerLeft.days}:
                 </span>
                 <span className="text-[#303030] font-['Montserrat'] font-normal text-base leading-4 block">
                   Days
@@ -129,10 +128,9 @@ const SpringSale = () => {
             <img className="mt-[90px]" src="images/dots.png" alt="dots" />
           </div>
           <div className=" max-w-[902px]">
-            
             <Slider {...settings}>
               <ProductLayout
-                percentTag={false}
+                percentTag={true}
                 category="LAPTOP"
                 title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
                 rating="5"
@@ -140,12 +138,15 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={false}
                 stockAmount="50"
-                bg="#FFFFFF"
+                v2={true}
                 image={true}
                 spring={true}
+                correctprice="$118.00"
+                discounted={true}
+                isstock={true}
               />
               <ProductLayout
-                percentTag={false}
+                percentTag={true}
                 category="LAPTOP"
                 title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
                 rating="3"
@@ -153,12 +154,15 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={true}
                 stockAmount="50"
-                bg="#FFFFFF"
+                v2={true}
                 image={true}
                 spring={true}
+                correctprice="$118.00"
+                discounted={true}
+                isstock={true}
               />
               <ProductLayout
-                percentTag={false}
+                percentTag={true}
                 category="LAPTOP"
                 title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
                 rating="2"
@@ -166,12 +170,15 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={true}
                 stockAmount="50"
-                bg="#FFFFFF"
+                v2={true}
                 image={true}
                 spring={true}
+                correctprice="$118.00"
+                discounted={true}
+                isstock={true}
               />
               <ProductLayout
-                percentTag={false}
+                percentTag={true}
                 category="LAPTOP"
                 title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
                 rating="4"
@@ -179,12 +186,15 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={true}
                 stockAmount="50"
-                bg="#FFFFFF"
+                v2={true}
                 image={true}
                 spring={true}
+                correctprice="$118.00"
+                discounted={true}
+                isstock={true}
               />
               <ProductLayout
-                percentTag={false}
+                percentTag={true}
                 category="LAPTOP"
                 title=" S21 Laptop Ultra HD LED Screen Feature 2023 ..."
                 rating="1"
@@ -192,9 +202,12 @@ const SpringSale = () => {
                 price="2,199.00"
                 stock={false}
                 stockAmount="50"
-                bg="#FFFFFF"
+                v2={true}
                 image={true}
                 spring={true}
+                correctprice="$118.00"
+                discounted={true}
+                isstock={true}
               />
             </Slider>
           </div>

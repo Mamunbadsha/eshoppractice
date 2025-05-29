@@ -103,6 +103,7 @@ const FeatureProduct = () => {
             price="2,199.00"
             stock={false}
             stockAmount="50"
+             images={true}
           />
           <ProductLayout
             percentTag={true}
@@ -114,6 +115,8 @@ const FeatureProduct = () => {
             correctprice="$118.00"
             stock={false}
             stockAmount="50"
+            discounted={true}
+            images={true}
           />
           <ProductLayout
             // percentTag={true}
@@ -124,6 +127,7 @@ const FeatureProduct = () => {
             price="2,199.00"
             stock={false}
             stockAmount="50"
+            images={true}
           />
           <ProductLayout
             // percentTag={true}
@@ -134,6 +138,7 @@ const FeatureProduct = () => {
             price="2,199.00"
             stock={false}
             stockAmount="50"
+            images={true}
           />
           <ProductLayout
             // percentTag={false}
@@ -144,6 +149,7 @@ const FeatureProduct = () => {
             price="2,199.00"
             stock={false}
             stockAmount="50"
+            images={true}
           />
         </Slider>
       </Container>

@@ -15,7 +15,7 @@ const FooterBottom = () => {
             <ul className="mt-[158px] flex flex-col gap-4">
               <li>
                 {" "}
-                <a href="tel:0246565545" className="flex items-center gap-2">
+                <a href="tel:0246565545" className="flex items-center gap-2 hover:text-[#FF624C] duration-300">
                   {" "}
                   <FaPhone /> +1 (555) 123-4567
                 </a>
@@ -23,7 +23,7 @@ const FooterBottom = () => {
               <li>
                 <a
                   href="gmail:mamunbadsha@gmail.com"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 hover:text-[#FF624C] duration-300"
                 >
                   <BiLogoGmail />
                   information@eshop.com
@@ -33,7 +33,8 @@ const FooterBottom = () => {
                 <a
                   href="https://maps.app.goo.gl/bnnTNWxkG2Y9bMhQ7"
                   target="-blank"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 hover:text-[#FF624C] duration-300 "
+
                 >
                   <MdLocationOn />
                   123 Main Street, Anytown USA
@@ -41,55 +42,88 @@ const FooterBottom = () => {
               </li>
             </ul>
           </div>
-          <div className="mr-[96px]">
-            <h4 className='font-["Popins"] font-semibold text-xl'>Links</h4>
-            <ul className="mt-[24px] flex flex-col gap-3">
-              <li>Products List</li>
-              <li>Order Tracking</li>
-              <li>Products Guide</li>
-              <li>Shopping Cart</li>
-              <li>Tech Blog</li>
-            </ul>
-          </div>
-          <div className="mr-[96px]">
-            <h4 className='font-["Popins"] font-semibold text-xl'>Supports</h4>
-            <ul className="mt-[24px] flex flex-col gap-3">
-              <li>About Us</li>
-              <li>Privacy Policy</li>
-              <li>Return Policy</li>
-              <li>Help Centre</li>
-              <li>Store Locations</li>
-              <li>Careers</li>
-            </ul>
-          </div>
-          <div className="mr-[96px]">
-            <h4 className='font-["Popins"] font-semibold text-xl'>
-              Categories
-            </h4>
-            <ul className="mt-[24px] flex flex-col gap-3">
-              <li>Computers & Tablets</li>
-              <li>Mobile Phones & Accessories</li>
-              <li>TV & Home Theater</li>
-              <li>Audio & Headphones</li>
-              <li>Cameras & Camcorders</li>
-              <li>Gaming Equipment</li>
-              <li>Home Appliances</li>
-            </ul>
-          </div>
-          <div className="mr-[80px]">
-            <h4 className='font-["Popins"] font-semibold text-xl mb-[24px]'>
-              Payments
-            </h4>
-            <img src="images/payment.png" alt="payment" />
-            <h4 className=' mt-[73px]  font-["Popins"] font-semibold text-xl'>
-              Follow Us
-            </h4>
-
-            <ul className="mt-[24px] flex flex-col gap-3">
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Facebook</li>
-            </ul>
+          <div className="flex justify-between gap-[130px]">
+            <div>
+              <h4 className='font-["Popins"] font-semibold text-xl'>Links</h4>
+              <ul className="mt-[24px] flex flex-col gap-3">
+                <li className="hover:text-[#FF624C] duration-300">
+                  Products List
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Order Tracking
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Products Guide
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Shopping Cart
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">Tech Blog</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className='font-["Popins"] font-semibold text-xl'>
+                Supports
+              </h4>
+              <ul className="mt-[24px] flex flex-col gap-3">
+                <li className="hover:text-[#FF624C] duration-300">About Us</li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Privacy Policy
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Return Policy
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Help Centre
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Store Locations
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">Careers</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className='font-["Popins"] font-semibold text-xl'>
+                Categories
+              </h4>
+              <ul className="mt-[24px] flex flex-col gap-3">
+                <li className="hover:text-[#FF624C] duration-300">
+                  Computers & Tablets
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Mobile Phones & Accessories
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  TV & Home Theater
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Audio & Headphones
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Cameras & Camcorders
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Gaming Equipment
+                </li>
+                <li className="hover:text-[#FF624C] duration-300">
+                  Home Appliances
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className='font-["Popins"] font-semibold text-xl mb-[24px]'>
+                Payments
+              </h4>
+              <img src="images/payment.png" alt="payment" />
+              <h4 className=' mt-[73px]  font-["Popins"] font-semibold text-xl'>
+                Follow Us
+              </h4>
+              <ul className="mt-[24px] flex flex-col gap-4">
+                <li className="hover:text-[#FF624C]">Twitter</li>
+                <li className="hover:text-[#FF624C]">Instagram</li>
+                <li className="hover:text-[#FF624C]">Facebook</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -103,55 +137,7 @@ const FooterBottom = () => {
           <p>Sitemap</p>
         </div>
       </div>
-      <div>
-        {function App() {
-          const countriesWithFlag = [
-            {
-              name: "USA",
-              flag: "https://flagcdn.com/us.svg",
-              value: "us",
-              language: "en",
-            },
-            {
-              name: "USA",
-              flag: "https://flagcdn.com/bd.svg",
-              value: "bd",
-              language: "bd",
-            },
-          ];
-
-          const options = countriesWithFlag.map((country) => ({
-            value: country.value,
-            language: country.value,
-            label: (
-              <div className="flex items-center">
-                <img
-                  src={country.flag}
-                  alt={`${country.name} flag`}
-                  className="w-4 h-4 mr-2"
-                />
-                <span>{country.name}</span>
-              </div>
-            ),
-          }));
-
-         return(
-          <>
-         <Select 
-         options={options}
-         onChange={(selected)=> console.log('Selected:', selected.value)}
-         className="w-[200px]"
-         classNamesPrefix="select" 
-         /> 
-        <div>
-          <h1>this is my countru language</h1>
-        </div>
-          </>
-         )
-        }}
-      </div>
     </Container>
   );
 };
-
 export default FooterBottom;
