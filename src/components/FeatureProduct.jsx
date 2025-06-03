@@ -103,7 +103,7 @@ const FeatureProduct = () => {
             price="2,199.00"
             stock={false}
             stockAmount="50"
-             images={true}
+            images={true}
           />
           <ProductLayout
             percentTag={true}

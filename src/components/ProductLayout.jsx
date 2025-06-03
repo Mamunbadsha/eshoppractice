@@ -84,7 +84,9 @@ const ProductLayout = ({
             <img className="w-full" src="images/pl.png" alt="watch" />
             {percentTag && (
               <div className="bg-[#FF624C] h-[100px] w-[100px] absolute top-[0px] right-[0px] rounded-full font-bold text-white">
-              <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">50%</p>
+                <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                  50%
+                </p>
               </div>
             )}
           </div>
@@ -115,19 +117,18 @@ const ProductLayout = ({
             )}
           </div>
 
-       {  isstock?(
-        <div className="w-[383px] h-[30px] bg-[#FAFAFA] rounded-[25px] mt-[32px] ">
-          <div className="w-[50%] h-[30px] bg-[#0e0d0d] rounded-[25px] relative" >
-           <p className="justify-center items-center flex text-white absolute top-[0px] right-[0px]"> 50 AVAILABLE</p>
-          </div>
-        </div>
-       ):(
-        <div></div>
-       )
-      
-      
-      }
-            
+          {isstock ? (
+            <div className="w-[383px] h-[30px] bg-[#FAFAFA] rounded-[25px] mt-[32px] group ">
+              <div className="w-[50%] h-[30px] bg-[#0e0d0d] rounded-[25px] relative group-hover:bg-[#FF624C] transition-all duration-300">
+                <p className="justify-center items-center flex text-white absolute top-[0px] right-[0px]">
+                  {" "}
+                  50 AVAILABLE
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
       )}
     </>

@@ -80,9 +80,10 @@ const SpringSale = () => {
             </h1>
             <div className="flex w-[402px] justify-between">
               <div>
-                <span className=" text-[50px] font-[700] text-[#e53b2c] justify-center flex">
-                  {timerLeft.days <= 9 ? `0${timerLeft.days}` : timerLeft.days}:
-                </span>
+                <div className=" text-[50px] font-[700] text-[#e53b2c] justify-center flex">
+                  {timerLeft.days <= 9 ? `0${timerLeft.days}` : timerLeft.days}
+                  <span>:</span>
+                </div>
                 <span className="text-[#303030] font-['Montserrat'] font-normal text-base leading-4 block">
                   Days
                 </span>
