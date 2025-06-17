@@ -5,3 +5,24 @@
 .slick-next::before {
   display: none;
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff624c;
+  pointer-events: auto;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+ 
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff624c;
+  pointer-events: auto;
+  cursor: pointer;
+ 
+}

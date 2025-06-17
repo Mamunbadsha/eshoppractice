@@ -58,7 +58,6 @@ const TopRightBar = () => {
             before:h-[32px] before:bg-[#BFBFBF] before:left-[175px] before:top-[50%]
            before:-translate-y-1/2"
       >
-        {" "}
         <select
           name="country"
           className="w-[150px] hidden "
