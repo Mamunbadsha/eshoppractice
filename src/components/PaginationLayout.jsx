@@ -56,7 +56,7 @@ const PaginationLayout = ({
         className="px-3 py-1 rounded bg-gray-300 disabled:opacity-50 hover:bg-gray-500 cursor-pointer"
         >&gt;</button>
 
-        <span>
+        <span className="ml-10">
             showing{currentPage* itemPerPage} of {totalItems}results
         </span>
      </div>
