@@ -23,45 +23,42 @@ const PaginationLayout = ({
 
   const pageNumbers = [];
 
-  for(let i=startPage;i <=endPage;i++){
-    pageNumbers.push(i)
+  for (let i = startPage; i <= endPage; i++) {
+    pageNumbers.push(i);
   }
 
-  return ( 
-
-     <div className="flex items-center justify-center p-4">
-        <button 
-        onClick={()=> onPageChange(currentPage-1)}
-        disabled={currentPage===1}
+  return (
+    <div className="flex items-center justify-center p-4">
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
         className="px-3 py-1 rounded bg-gray-300 disabled:opacity-50 hover:bg-gray-500 cursor-pointer"
-        >&lt;</button>
+      >
+        &lt;
+      </button>
 
-
-
-
-    {
-        pageNumbers.map((number,index)=>(
-            <button
-            key={index}
-            onClick={()=>onPageChange(number)}
-            className="px-3  py-1 mx-2 rounded bg-gray-300 disabled:opacity-50 hover:bg-gray-500 cursor-pointer"
-            >
-            {number}
-            </button>
-        ))
-    }
-        <button 
-        onClick={()=> onPageChange(currentPage+1)}
-        disabled={currentPage===totalPages}
+      {pageNumbers.map((number, index) => (
+        <button
+          key={index}
+          onClick={() => onPageChange(number)}
+          className="px-3  py-1 mx-2 rounded bg-gray-300 disabled:opacity-50 hover:bg-gray-500 cursor-pointer"
+        >
+          {number}
+        </button>
+      ))}
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
         className="px-3 py-1 rounded bg-gray-300 disabled:opacity-50 hover:bg-gray-500 cursor-pointer"
-        >&gt;</button>
+      >
+        &gt;
+      </button>
 
-        <span className="ml-10">
-            showing{currentPage* itemPerPage} of {totalItems}results
-        </span>
-     </div>
-    
-    );
+      <span className="ml-12">
+        showing{currentPage * itemPerPage} of {totalItems}results
+      </span>
+    </div>
+  );
 };
 
 export default PaginationLayout;
