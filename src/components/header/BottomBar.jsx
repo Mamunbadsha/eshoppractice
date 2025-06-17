@@ -90,6 +90,9 @@ const BottomBar = () => {
                   <div className="absolute z-10 mt-2 w-[150px]  bg-white rounded shadow-lg ">
                     <ul className=" font-['Monserrat'] font-normal text-[20px] leading-10 text-black justify-center">
                       <li className="px-2 hover:bg-[#FF624C] duration-300 cursor-pointer ">
+                        <Link to={"/product-list"}>All products </Link>
+                      </li>
+                      <li className="px-2 hover:bg-[#FF624C] duration-300 cursor-pointer ">
                         product one
                       </li>
                       <li className="px-2 hover:bg-[#FF624C] duration-300 cursor-pointer ">

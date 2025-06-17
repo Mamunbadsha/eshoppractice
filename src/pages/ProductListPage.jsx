@@ -52,7 +52,7 @@ const ProductListPage = () => {
               <ul className="mt-[20px]">
                 {catagories.map((item, index) => (
                   <li className="py-[12px] cursor-pointer flex gap-2 items-center group hover:font-bold duration-300 ">
-                    <span className="w-[16px] h-[16px] border group-hover:bg-[#FF624C]">
+                    <span className="w-[16px] h-[16px] border group-hover:bg-[#FF624C] flex items-center">
                       <IoIosCheckmark className="group-hover:text-[#ffff]" />
                     </span>
                     {item}
@@ -73,7 +73,7 @@ const ProductListPage = () => {
               <ul>
                 {cata.map((item, index) => (
                   <li className="py-[12px] flex gap-2 items-center  cursor-pointer group hover:font-bold ">
-                    <span className="w-[16px] h-[16px] border group-hover:bg-[#FF624C]">
+                    <span className="w-[16px] h-[16px] border group-hover:bg-[#FF624C] flex items-center">
                       <IoIosCheckmark className="group-hover:text-[#ffff]" />
                     </span>
                     <div className="flex justify-between items-center w-full mr-6">

@@ -3,13 +3,16 @@ import { IoSearchSharp } from "react-icons/io5";
 import CartIcon from "../../icons/CartIcon";
 import ManIcon from "../../icons/ManIcon";
 import Container from "../Container";
+import { Link } from "react-router-dom";
 
 const MiddleBar = () => {
   return (
     <Container>
       <div className="flex justify-between items-center py-[32px]">
         <div>
+         <Link to={"/"}>
           <img src="images/Logo.png" alt="logo" />
+         </Link>
         </div>
         <div className="flex  items-center">
           <div className="relative mr-[40px]">
